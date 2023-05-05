@@ -1,0 +1,50 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: white;
+	text-align: center;
+}
+
+#root {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#front-end {
+	width: 80px;
+	line-height: 80px;
+	background-color: gray;
+	position: relative;
+}
+
+.outside {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 240px;
+	transform-origin: 16.666% 50%;
+	transform: rotateZ(var(--angle)) translateY(-100%);
+}
+#HTML {
+	--angle: 0deg;
+	background-color: blue;
+}
+#CSS {
+	--angle: 90deg;
+	background-color: green;
+}
+#JavaScript {
+	--angle: 180deg;
+	background-color: orange;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 240px;
+}
+#ReactJS {
+	--angle: 270deg;
+	background-color: red;
+}
